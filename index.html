@@ -23,7 +23,8 @@
                 <li>
 
                     <i class='bx bx-search-alt-2'></i>
-                    <input type="text" placeholder="Search something...">
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
                 </li>
             </input>
         </li>
@@ -32,48 +33,48 @@
                 <i class='bx bx-grid-alt'></i>
                 <span class="link_name">Dashboard</span>
             </a>
-            <!--<span class="link_name">Dashboard</span>-->
+            <span class="tooltip">Dashboard</span>
         </li>
         <li>
             <a href="#">
                 <i class='bx bx-user'></i>
                 <span class="link_name">User</span>
             </a>
-            <!--<span class="link_name">Dashboard</span>-->
+            <span class="tooltip">User</span>
         </li>
         <li>
             <a href="#">
                 <i class='bx bx-chat'></i>
                 <span class="link_name">Messages</span>
             </a>
-            <!--<span class="link_name">Dashboard</span>-->
+            <span class="tooltip">Messages</span>
         </li>
         <li>
             <a href="#">
                 <i class='bx bx-stats'></i>
                 <span class="link_name">Stats</span>
             </a>
-            <!--<span class="link_name">Dashboard</span>-->
+            <span class="tooltip">Stats</span>
         </li>
         <li>
             <a href="#">
                 <i class='bx bxl-codepen'></i>
                 <span class="link_name">Admin Panel</span>
             </a>
-            <!--<span class="link_name">Dashboard</span>-->
+            <span class="tooltip">Admin Panel</span>
         </li>
         <li>
             <a href="#">
                 <i class='bx bx-cog'></i>
                 <span class="link_name">Settings</span>
             </a>
-            <!--<span class="link_name">Dashboard</span>-->
+            <span class="tooltip">Settings</span>
         </li>
    </ul>
    <div class="profile_content">
        <div class="profile">
            <div class="profile_details">
-               <!--<img src="images/profile.jpg" alt="">-->
+<img src="images/profile.jpg" alt="">
                <div class="name_job">
                    <div class="name">Anıl Atasoy</div>
                    <div class="job">Developer</div>
@@ -83,5 +84,25 @@
        </div>
    </div>
 </div>
+<div class="home_content">
+    <div class="text">Home Content</div>
+</div>
+
+
+<!--Scripts-->
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".bx-search-alt-2");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+    searchBtn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+    
+    
+</script>
 </body>
 </html>
